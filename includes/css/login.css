@@ -1,0 +1,70 @@
+body{
+    background-image: url("/www/vkr/img/system/fon1.jpg");
+    background-position: center center; /* по центру */
+    background-repeat: no-repeat; /* Фон не повторяется */
+    background-attachment: fixed; /* Фон зафиксирован в области просмотра и не двигается, когда высота контента превышает высоту изображения */ 
+    background-size: cover;   /* Фон меняет масштаб при изменении размеров содержащего его контейнера*/
+    background-color: #464646;/* Цвет фона, который будет отображаться при загрузке фоновой картинки*/ 
+}
+
+.container-l{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    right: 0px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#list-tab a{
+    border-radius: 0;
+    background: transparent;
+    border-color: white;
+    border-radius: 50px 50px 0px 0px;
+    color: white;
+    text-align: center;
+    font-size: medium;
+    font-weight: 700;
+}
+#list-tab a.active{
+    background: white;
+    border-color: white;
+    border-radius: 50px 50px 0px 0px;
+    text-align: center;
+    font-size: medium;
+    font-weight: 700;
+    color: black;
+}
+button.btn{
+    background-color:none;
+    text-align: center;
+    align-self: center;
+    font-size:larger;
+    border-radius: 15px;
+    padding: 6px 23px;
+}
+
+.login-form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+} 
+.tab-content{
+    background: white;
+    border-radius: 0px 0px 50px 50px;
+    padding: 20px;
+}
+
+@media screen and (max-width: 992px) {
+    .login-form{
+        width: 80%;
+    }     
+}
+
+@media screen and (max-width: 576px) {
+    .login-form{
+        width: 100%;
+    }     
+}

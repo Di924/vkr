@@ -1,0 +1,19 @@
+body{
+    background-image: url("/www/vkr/img/system/fon1.jpg");
+    background-position: center center; /* по центру */
+    background-repeat: no-repeat; /* Фон не повторяется */
+    background-attachment: fixed; /* Фон зафиксирован в области просмотра и не двигается, когда высота контента превышает высоту изображения */ 
+    background-size: cover;   /* Фон меняет масштаб при изменении размеров содержащего его контейнера*/
+    background-color: #464646;/* Цвет фона, который будет отображаться при загрузке фоновой картинки*/ 
+}
+.bg-light-50{
+    background-color: #ffffff9c;
+}
+.container{
+    padding: 10px;
+}
+@media screen and (max-width: 768px) {
+    .t-second-menu{
+        display: none;
+    }
+}
